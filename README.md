@@ -1,1 +1,1 @@
-# cursso
+# curso
