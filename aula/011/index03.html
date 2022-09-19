@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    qual é o seu pais:<input type="tostring" nome = "naci" id="naci">
+    <input type="button" value="verificar" onclick="pais()">
+    <div id = 'res'></div>
+    <script>
+        function pais(){
+            var txt = window.document.querySelector('input#naci')
+            var res = window.document.querySelector('div#res')
+            var tt = String(txt.value)
+            if (tt == 'brasil') {
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>você é estrangeiro</p>'
+            }
+        res.innerHTML += typeof(tt)    
+        }
+    </script>
+
+</body>
+</html>
